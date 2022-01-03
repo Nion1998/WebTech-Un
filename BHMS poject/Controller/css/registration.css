@@ -1,0 +1,118 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body{
+    height: 100%;
+    width: 1200px;
+    background-image: url(img/h12.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+}
+section {
+    padding: 30px;
+    margin: auto;
+    
+}
+
+.main{
+ width: 450px;
+ margin: 0px auto 0px auto;
+ height:100%;
+
+}
+
+.head{
+    width: 405px;;
+    background-color: rgba(0,0,0,0.7);
+    margin-left:328px;
+    margin-right:10px;
+    color: white;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    font-family: sans-serif;
+    border-radius: 10px 10px 0px 0px;
+}
+h3{
+    font-size: 20px;
+}
+#register{
+    background-color: rgba(0,0,0,0.5);
+    width: 330px;
+    font-size: 12px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color: #FFD700;
+    padding: 25px;
+    align-content: center;
+     
+
+}
+label{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+label.create{
+    padding:10px 20px 0 0;
+}
+#name{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+input#submit{
+    width: 250px;
+    height: 30px;
+    background-color: #ff7200;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-align: center;
+    margin-left:32px;
+    
+    
+}
+
+
+
+input#submit:hover{
+background: white;
+color: #ff7200;
+}
+
+.btnn{
+    width: 200px;
+    height: 20px;
+    background-color:#ff7200;
+    border: none;
+    font-size: 16px;
+    margin-left: 65px;
+    border-radius: 7px;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-align:center;
+}
+.btnn:hover{
+    background:#000;
+    color:#ff7200;
+}
+
+.btnn a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}

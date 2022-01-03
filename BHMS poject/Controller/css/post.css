@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #22242A;
+}
+
+header {
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color: #ff4500;
+}
+
+.logout_btn {
+    padding: 7px;
+    background: #ff4500;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 70px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btnn:hover {
+    background: yellow;
+}
+
+.logout_btnn {
+    padding: 5px;
+    background: #fff;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 200px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff4500;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover {
+    background: red;
+}
+
+.sidebar {
+    background: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #ff4500;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.8s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color: #19B3D3;
+}
+
+#check:checked~.sidebar {
+    left: -190px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content {
+    margin-left:250px;
+    background: url(img/h1.jpg) repeat;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    transition: 0.5s;
+    padding-bottom:100px;
+    margin-bottom: 100px;
+}
+
+#check:checked.content {
+    margin-left: 60px;
+}
+
+#check {
+    display: none;
+}
+
+.home-section {
+    position: relative;
+    background: #E4E9F7;
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+
+.sidebar.close~.home-section {
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.home-section .home-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.home-section .home-content .bx-menu,
+.home-section .home-content .text {
+    color: #11101d;
+    font-size: 35px;
+}
+
+.home-section .home-content .bx-menu {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.home-section .home-content .text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.post {
+    width:370px;
+    height:365px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position:absolute;
+    top: 95px;
+    left:500px;
+    border-radius: 8px;
+    padding-left: 80px;
+    padding-top: 20px;
+    cursor: pointer;
+    color: #ff4500;
+    padding-bottom:40px;
+
+}
+
+.post h2 {
+    width: 272px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20PX;
+    color: #ff4500;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 2px;
+    padding: 7px;
+}
+
+.post input {
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 2px solid #ff4500;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+
+.post input:focus {
+    outline: none;
+    padding-bottom: 20px;
+}
+
+::placeholder {
+    color: grey;
+    font-family: Arial;
+}
+.btnn {
+    width: 100px;
+    height: 30px;
+    background-color: #ff7200;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+.btnn:hover {
+    background: red;
+    color: #ff7200;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 420px) {
+    .sidebar.close .nav-links li .sub-menu {
+        display: none;
+    }
+}

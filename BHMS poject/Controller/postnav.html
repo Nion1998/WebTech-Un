@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sidebar Dashboard Template</title>
+    <link rel="stylesheet" href="css/postnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>BHMS <span> PROPERTY</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="home.html" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <center>
+        <img src="css/img/logo.jpg" class="profile_image" alt="">
+        <h4>Bhms</h4>
+      </center>
+      <a href="#"><i class="fas fa-desktop"></i><span>POFILE</span></a>
+      <a href="post.html"><i class="fas fa-cogs"></i><span>POST</span></a>
+      <a href="#"><i class="fas fa-table"></i><span>PAYMENT HISTORY</span></a>
+      <a href="#"><i class="fas fa-th"></i><span>ALL POST</span></a>
+      <a href="#"><i class="fas fa-info-circle"></i><span>ORDER HISTORY</span></a>
+
+    </div>
+    <!--sidebar end-->
+    
+
+    <div class="content"></div>
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
+
+  </body>
+</html>
